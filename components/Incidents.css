@@ -1,0 +1,28 @@
+/* Incidents.css */
+.incidents-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .incidents-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .incidents-table th,
+  .incidents-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .incidents-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .incidents-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

@@ -1,0 +1,104 @@
+/* src/components/Home.css */
+
+/* Style the navigation menu with a semi-transparent background and impressive animations */
+
+body {
+    background: white; /* Adjust the colors as needed */
+    background-attachment: fixed; /* Fixed background */
+    background-repeat: no-repeat; /* No repeat */
+    background-size: cover; /* Cover the entire viewport */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set a font family if needed */
+  }
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent black background */
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ff5733;
+    transform: scale(1.1);
+  }
+  
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff5733;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  nav a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  
+  /* Style the image carousel */
+#karun{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* 100% of the viewport height */
+  
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the carousel horizontally */
+}
+/* src/components/Home.css */
+
+/* Center the carousel and create empty space on the left and right */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+  }
+  
+  /* Style the slides */
+  .carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px; /* Adjust the maximum slide width as needed */
+  }
+  
+  .carousel .slide img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.5s;
+  }
+  
+  .carousel .slide:hover img {
+    transform: scale(1.05);
+  }
+  
